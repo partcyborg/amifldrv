@@ -9,7 +9,7 @@ default:
 	rm -f amifldrv.o_shipped
 	mv amifldrv.o amifldrv.o_shipped
 	rm -f amifldrv_mod.o
-	mv amifldrv_mod.ko ../amifldrv_mod
+	mv amifldrv_mod.ko ../amifldrv_mod.o
 .PHONY : clean
 clean:
 	rm -f *.*~
