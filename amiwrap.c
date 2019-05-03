@@ -180,12 +180,12 @@ void wrap_kfree()
 AFU_ATTRIBUTE_FUNC
 unsigned long wrap_copy_from_user()
 {
-    return copy_from_user(pvArg0, pvArg1, ulArg0);
+    return raw_copy_from_user(pvArg0, pvArg1, ulArg0);
 }
 
 AFU_ATTRIBUTE_FUNC
 unsigned long wrap_copy_to_user()
 {
-    return copy_to_user(pvArg0, pvArg1, ulArg0);
+    return raw_copy_to_user(pvArg0, pvArg1, ulArg0);
 }
 
